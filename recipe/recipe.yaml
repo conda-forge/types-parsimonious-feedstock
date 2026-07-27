@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.0.20260508"
+  version: "0.11.0.20260724"
 
 package:
   name: types-parsimonious
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-parsimonious/types_parsimonious-${{ version }}.tar.gz
-  sha256: 41d8de1126e0fb42f434317eda74b69bb4411b4f511e309368cb137ea7e90028
+  sha256: 1cd4b52a1b3d68847dd8d143cc9312c9f4381f01339e538055d5097c032656e6
 
 build:
   number: 0
