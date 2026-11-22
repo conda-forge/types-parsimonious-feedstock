@@ -31,7 +31,7 @@ tests:
       strict: true
       site_packages:
         - types_parsimonious-${{ version }}.dist-info/**
-        - parsimonious-stubs/*.{toml,pypi,typed}
+        - parsimonious-stubs/*.{toml,pyi,typed}
   - requirements:
       run:
         - mypy
