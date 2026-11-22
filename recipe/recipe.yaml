@@ -16,17 +16,22 @@ build:
   number: 0
   noarch: python
   script:
-    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check --check-build-dependencies
 
 requirements:
   host:
     - pip
     - python ${{ python_min }}.*
-    - setuptools >=77.0.3
+    - setuptools >=82.0.1
   run:
     - python >=${{ python_min }}
 
 tests:
+  - package_contents:
+      strict: true
+      site_packages:
+        - types_parsimonious-${{ version }}.dist-info/**
+        - parsimonious-stubs/*.{toml,pypi,typed}
   - requirements:
       run:
         - mypy
@@ -39,7 +44,8 @@ about:
   summary: Typing stubs for parsimonious
   license: Apache-2.0
   license_file: LICENSE
-  homepage: https://github.com/python/typeshed/tree/main/stubs/parsimonious
+  homepage: https://pypi.org/project/types-parsimonious
+  repository: https://github.com/python/typeshed/tree/main/stubs/parsimonious
 
 extra:
   recipe-maintainers:
