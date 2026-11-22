@@ -3,11 +3,13 @@ About types-parsimonious-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-parsimonious-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/python/typeshed/tree/main/stubs/parsimonious
+Home: https://pypi.org/project/types-parsimonious
 
 Package license: Apache-2.0
 
 Summary: Typing stubs for parsimonious
+
+Development: https://github.com/python/typeshed/tree/main/stubs/parsimonious
 
 Current build status
 ====================
